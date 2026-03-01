@@ -1,4 +1,8 @@
-local L = select(2, ...).Locale:GetLocale('zhCN'); if not L then return end;
+local _, db = ...;
+local L = db.Locale;
+
+-- 强制指定为简体中文环境，或者去掉 if 判断以强制在所有语言下生效
+if GetLocale() ~= "zhCN" then return end
 ---------------------------------------------------------------
 -- zhCN 简体中文 simplified Chinese
 ---------------------------------------------------------------
