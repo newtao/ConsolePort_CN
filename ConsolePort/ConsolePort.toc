@@ -21,6 +21,7 @@
 
 Libs\__manifest.xml
 XML\__manifest.xml
+Locale\__manifest.xml
 
 API.lua
 
